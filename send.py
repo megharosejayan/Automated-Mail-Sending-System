@@ -20,8 +20,8 @@ def mail(sender, passw, receiver_email, body, sub):
     password = passw
     # Create a multipart message and set headers
     message = MIMEMultipart()
-    message["From"] = "Lean In Tech <megharose15@gmail.com>"
-    # message["From"] = sender_email
+    #message["From"] = "Lean In Tech <megharose15@gmail.com>"
+    message["From"] = sender_email
     message["To"] = receiver_email
     message["Subject"] = subject
     message["Bcc"] = sender_email  # Recommended for mass emails (sending one email to multiple recepients) Not our case.
